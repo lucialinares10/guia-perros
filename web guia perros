@@ -1,0 +1,163 @@
+<! DOCTYPE HTML>
+
+<HTML lang="es">
+    
+<HEAD> 
+<TITLE> PRIMERA PR&Aacute;CTICA </TITLE> 
+</HEAD>
+<BODY> 
+<body style="background-color:#ece2c6;">
+    <br>
+    <br>
+    <br>
+    <TABLE width="2500"> 
+        <tr>
+            <td width="300" align=center></td>
+            <td width="300" align=center><FONT size="6" face="Tahoma" color="#391802"><b> Gu&iacute;a de razas de perros </b></FONT></td>
+            <td width="300" align=center></td>
+        </tr>
+    </TABLE>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <TABLE width="2500"> 
+        <tr>
+            <td width="300" align=center><a href="https://es.wikipedia.org/wiki/Bich%C3%B3n_fris%C3%A9" target="_blank"><IMG src="bichonfrise2.jpg" height=450> </IMG></a></td>
+            <td width="300" align=center><a href="https://es.wikipedia.org/wiki/Perro_de_agua_espa%C3%B1ol" target="_blank"><IMG src="perroDeAguas2.jpg" height=450> </IMG></a></td>
+            <td width="300" align=center><a href="https://es.wikipedia.org/wiki/Border_collie" target="_blank"><IMG src="borderCollie.jpg" height=450> </IMG></a></td>
+        </tr>
+        <tr>
+            <td width="300" align=center>
+                <br><br>
+                <a href="pagina_2_primer_trabajo.html" target="_blank"><FONT size="6" color="#391802" face="Tahoma"><b><i> Bich&oacute;n Fris&eacute;</i></b></FONT></a></td>
+            
+            <td width="300" align=center>
+                <br><br>
+                <FONT size="6" color="#391802" face="Tahoma"><b><i> Perro de aguas </i></b></FONT></td>
+            
+            <td width="300" align=center>
+                <br><br>
+                <a href="pagina_3_primer_trabajo.html" target="blank"><FONT size="6" color="#391802" face="Tahoma"><b><i> Border Collie </i></b></FONT></a></td>
+        </tr>
+    </TABLE>
+</body>
+</BODY> 
+</HTML>
+<! DOCTYPE HTML>
++
+<HTML lang="es">
+    
+<HEAD> 
+<TITLE> PRIMERA PR&Aacute;CTICA DOS </TITLE> 
+</HEAD>
+<BODY> 
+<body style="background-color:#ece2c6;">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <TABLE width="2500"> 
+        <tr>
+            <td width="300" align=center><img src="bichonFrise.jpg" height=460></td>
+            <td width="300" align=center><FONT size="6" color="#391802" face="Tahoma"><b><i>El bich&oacute;n fris&eacute; es un perro peludo e inquieto, no demasiado deportista, que tiene el adorable aspecto de un peluche. Sin embargo, esta raza ofrece mucho m&aacute;s que un aspecto agradable. Su actitud alegre y curiosa se ganar&aacute; el corazón de todo el mundo. Y puedes tener por seguro que un bich&oacute;n fris &eacute; nunca se cansa de ser el centro de atenci&oacute;n. </i></b></FONT></td>  
+            <td width="300" align=center></td>
+        </tr>
+    </TABLE>
+</body>
+</BODY> 
+</HTML>
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>PRIMERA PR&Aacute;CTICA tres</title>
+    <style>
+       
+        body {
+            background-color: #ece2c6;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        
+        video {
+            width: 80%;
+            max-width: 900px;  
+            border-radius: 15px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2); 
+            margin-bottom: 30px; 
+        }
+
+ 
+        .controles {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px; /
+        }
+
+    
+        button {
+            padding: 12px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4a4538; 
+            color: white;
+            border: none;
+            border-radius: 8px;
+            transition: all 0.3s ease; 
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+      
+        button:hover {
+            background-color: #7d7563;
+            transform: translateY(-3px); 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        button:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <video id="eje" autoplay muted controls>
+        <source src="perro.mp4" type="video/mp4">
+        
+    </video>
+
+    <div class="controles">
+        <button onclick="velocidad(0)" type="button">Parar</button>
+        <button onclick="velocidad(1)" type="button">Reproducir</button>
+        <button onclick="velocidad(0.5)" type="button">x0.5</button>
+        <button onclick="velocidad(2)" type="button">x2</button>
+        <button onclick="velocidad(4)" type="button">x4</button>
+        <button onclick="velocidad(6)" type="button">x6</button>
+    </div>
+
+    <script>
+        var vi = document.getElementById('eje');
+        function velocidad(p) {
+            if (p === 0) {
+                vi.pause();
+            } else {
+                vi.play();
+                vi.playbackRate = p;
+            }
+        }
+    </script>
+
+</body>
+</html>
